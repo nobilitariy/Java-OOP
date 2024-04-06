@@ -9,6 +9,9 @@ public class NoiseZoo {
 
     public void spiakAll() {
         for (Speakable speakble : speakables) {
+            if(speakable instanceof Animal animal){
+                System.out.print(amimal.getName() + ": ");
+            }
             speakble.speak();
         }
     }
